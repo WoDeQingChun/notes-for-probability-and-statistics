@@ -1,0 +1,54 @@
+\chapter{随机事件与概率}
+\section{随机事件}
+\subsection*{概念}
+\begin{definition}
+    先对一些概念给出明确的定义：
+    \begin{itemize}
+        \item 现象：={确定性现象，不确定性现象}
+        \item 随机现象：= 具有统计规律的不确定性现象
+        \item 随机试验：= 对随机现象的一次观测
+        \item 样本点：= 随机试验的一种结果，常记为$\omega$
+        \item 样本空间：= 随机试验的所有可能结果的集合，常记为$\Omega$
+    \end{itemize}
+\end{definition}
+\begin{definition}[随机事件]
+    对于一个随机试验，我们关注的一般不是所有可能的结果，而是某些具有特定意义的结果。
+    而这些特定的样本点组成的集合就是随机事件，简称事件，常用大写字母$A,B,C,\cdots$表示。
+    易知随机事件是样本空间的子集。
+\end{definition}
+\begin{remark}
+    观点：随机事件是样本点的集合！也就是我们说的事件$A$中的$A$是一个集合
+\end{remark}
+
+\begin{definition}[不可能事件、必然事件]
+    \begin{itemize}
+        \item $\varnothing$不包含任何的样本点，因此是不可能事件
+        \item 样本空间$\Omega$包含所有可能的结果
+    \end{itemize}
+\end{definition}
+
+\begin{definition}[基本事件]
+    单个样本点构成的单点集$\{s\}$称为基本事件
+\end{definition}
+
+\begin{definition}[事件的发生]
+    满足一个随机事件$A$所要求的样本点可能有很多个。但一次随机试验产生的结果只是一个样本点$\omega_0$,若$\omega_0 \in A$,
+    我们就说事件$A$发生了
+\end{definition}
+
+\subsection*{事件(集合)的运算}
+既然事件是集合，那么集合论中集合的相关运算也是事件的运算。
+
+\begin{definition}[事件的运算]
+    \begin{itemize}
+        \item 若$A \subset B$ ，则称$A$是$B$的子事件。此时$\forall s \in A \Rightarrow s \in B$,即$A$发生导致$B$发生
+        \item $A \cup B$, 记为$A$与$B$的和事件。$A \cup B$发生 $\Leftrightarrow$ $A,B$至少有一个发生
+        \item $A \cap B$, 记为$A$与$B$的积事件，常简记为$AB$。$A \cap B$发生 $\Leftrightarrow$ $A,B$同时发生
+        \item $A \backslash B$或$A-B$，记为$A$与$B$的差事件。$A - B$发生 $\Leftrightarrow$ $A$发生且$B$不发生
+        \item 对立事件：$A$的对立事件$\overline{A}:= \Omega - A$
+        \item 互斥事件：若$AB=\varnothing$,则称事件$A,B$互斥
+    \end{itemize}
+\end{definition}
+\begin{property}
+    由定义易知：对立的事件一定互斥！
+\end{property}
